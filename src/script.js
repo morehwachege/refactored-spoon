@@ -20,6 +20,9 @@ async function fetchData(city) {
         .then(data => {
             renderItems(data, city);
         })
+        .catch(error => {
+            console.log(error)
+        })
 }
 
 function renderItems(data, city) {
