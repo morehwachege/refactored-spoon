@@ -47,7 +47,7 @@ body{
 
 .information{
     width: 100%;
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -61,11 +61,27 @@ body{
 .desc-temp{
     text-align: center;
     font-size: 50px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 600;
 }
 .previous{
     font-size: 16px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+.other-forecasts{
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+.day{
+    width: 300px;
+    height: auto;
+    background-color: red;
+    border-radius: 5px;
+    margin: 10px;
 }
