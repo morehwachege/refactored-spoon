@@ -7,3 +7,16 @@
 body{
     background-color: #87ceeb;
 }
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .nav-title{
+    font-family:'Courgette', cursive;
+    text-align: center;
+    font-size: 30px;
+}
