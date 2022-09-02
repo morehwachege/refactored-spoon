@@ -18,8 +18,7 @@ async function fetchData(city) {
     await fetch(`https://goweather.herokuapp.com/weather/${city}`)
         .then(res => res.json())
         .then(data => {
-            renderItems(data, city)
-            console.log(data);
+            renderItems(data, city);
         })
 }
 
@@ -44,7 +43,6 @@ function renderItems(data, city) {
         divFore.className = "day";
         divFore.innerHTML = lastP
         forecast.append(divFore);
-        console.log(day)
     })
 }
 
@@ -54,28 +52,22 @@ function switchImages(dataDescription){
     const image2 = document.getElementById("image2");
     if(dataDescription === "Sunny"){
         image1.src = "./src/images/sun.png";
-        image2.remove();
+        image2.style.display = "none";
     }
     else if(dataDescription === "Clear"){
         image1.src = "./src/images/cloud.png";
-        // image2.style.display ="flex"
-        const image2 = document.createElement("img");
         image2.src = "./src/images/cloud.png";
     }
     else if(dataDescription === "Light rain, light rain with thunderstorm"){
         image1.src = "./src/images/lightRain.png";
-        const image2 = document.createElement("img");
         image2.src = "./src/images/storm.png";
     }
     else if(dataDescription === "Patchy rain possible"){
         image1.src = "./src/images/darkclouds.png";
-        image2.remove()
-
+        image2.style.display = "none";
     }
     else if(dataDescription === "Partially Cloudy"){
         image1.src = "./src/images/partialCloud.png";
-        image2.remove()
-
+        image2.src = "./src/images/partialCloud.png";
     }
-    return {}
 }
