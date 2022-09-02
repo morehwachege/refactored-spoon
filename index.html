@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
     <title>Document</title>
+    <script src="./src/script.js"></script>
 </head>
 
 <body>
@@ -38,24 +39,19 @@
                     <img src="./src/images/sun.png" alt="A Cloud">
                 </div>
                 <div class="description">
-                    <h1 class="desc-temp">+23 <sup>o</sup>C</h1>
-                    <h3 class="desc-title">Partialy Cloudy</h3>
-                    <h3 class="city">Durban</h3>
+                    <h1 id="desc-temp"><span id="desc-temp-span"></span></h1>
+                    <h3 id="desc-title"></h3>
+                    <h3 id="city">Durban</h3>
                 </div>
                 <h4 class="previous">Previous forcasts</h4>
             </div>
 
-            <div class="other-forecasts">
-                <div class="day day1"></div>
-                <div class="day day2"></div>
-                <div class="day day3"></div>
+            <div id="other-forecasts">
             </div>
 
     </main>
-
     
 
-    <script src="./src/script.js"></script>
 </body>
 
 </html>
