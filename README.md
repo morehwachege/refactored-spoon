@@ -1,6 +1,3 @@
-# refactored-spoon
-Weather API
-
 # Weather Client Application
 
 A weather application client to search for weather information about major cities.
