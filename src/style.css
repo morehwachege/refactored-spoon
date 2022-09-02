@@ -20,3 +20,18 @@ body{
     text-align: center;
     font-size: 30px;
 }
+
+.form-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form-container #city-input{
+    width: 350px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
