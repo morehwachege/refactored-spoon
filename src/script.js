@@ -1,5 +1,5 @@
-// fetch("https://goweather.herokuapp.com/weather/Dubai")
-//     .then(res => res.json())
-//     .then(data => {
-//         console.log(data);
-//     })
+fetch("https://goweather.herokuapp.com/weather/Abuja")
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+    })
