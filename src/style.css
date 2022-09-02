@@ -32,14 +32,17 @@ body{
 .form-container #city-input{
     width: 350px;
     height: 40px;
+    font-size: 16px;
     padding-left: 20px;
     border-radius: 5px;
-    color: rgb(2, 2, 52)
+    color: rgb(2, 2, 52);
+    border: 0;
 }
 .form-container #btn-submit{
     width: 100px;
     height: 40px;
     border: 0;
+    font-size: 16px;
     border-radius: 5px;
     color: #f3f3f3;
     background-color: rgb(2, 2, 52);
