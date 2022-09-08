@@ -3,6 +3,23 @@
 function handleSubmit(e) {
     e.preventDefault();
     const cityName = e.target.city.value;
+    
+    // save button clicked
+    let saveStatus = false
+    const saveBtn = document.getElementById("btn-save");
+    const locations = document.getElementById("location-saved");
+    saveBtn.addEventListener("click", () => {
+        if(saveStatus === false){
+            saveStatus = true;
+            let citySaved = document.createElement("li");
+            citySaved.innerHTML = cityName;
+            locations.append(citySaved)
+            console.log("save activated!")
+        }else{
+            saveStatus = false;
+            console.log("save deactivated!")
+        }
+    })
     form.reset();
     fetchData(cityName);
 }
@@ -47,6 +64,7 @@ function renderItems(data, city) {
         divFore.innerHTML = lastP
         forecast.append(divFore);
     })
+    
 }
 
 function switchImages(dataDescription){
